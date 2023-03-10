@@ -9,8 +9,18 @@ This is a C++ implementation of a dynamic array (vector) data structure that can
 ## Usage
 To use this implementation of a dynamic array, simply include the vector.h header file in your C++ code and instantiate the Vector class template with the desired data type. For example, to create a vector of integers, you can do:
 
+The follwing operations can be performed on a vector:
+- `append()`: This method allows the user to add an element to the end of the list.
+- `extend()`: This method allows the user to add multiple elements to the end of the list.
+- `insert()`: This method allows the user to add an element at a specific index in the list.
+- `remove()`: This method allows the user to remove the first occurrence of an element from the list.
+- `pop()`: This method allows the user to remove an element from a specific index in the list, and returns the removed element.
+- `index()`: This method allows the user to find the first occurrence of an element in the list, and returns its index.
+- `count()`: This method allows the user to count the number of times an element appears in the list.
+- `sort()`: This method allows the user to sort the elements in the list in ascending order.
+- `reverse()`: This method allows the user to reverse the order of the elements in the list.
+
 ```cpp
-Copy code
 #include "vector.h"
 
 int main() {
@@ -20,58 +30,6 @@ int main() {
     return 0;
 }
 ```
-
-Methods
-Vector()
-Constructs an empty vector.
-
-~Vector()
-Destroys the vector and releases any memory allocated by it.
-
-T& front() const
-Returns a reference to the first element in the vector.
-
-T& back() const
-Returns a reference to the last element in the vector.
-
-const T* data() const
-Returns a const pointer to the underlying array.
-
-void increaser_of_cap()
-Doubles the capacity of the vector.
-
-int size() const
-Returns the number of elements in the vector.
-
-int capacity() const
-Returns the current capacity of the vector.
-
-bool empty() const
-Returns true if the vector is empty, false otherwise.
-
-void clear()
-Removes all elements from the vector.
-
-Vector(const Vector<T>& other)
-Constructs a vector that is a copy of the other vector.
-
-Vector& operator=(const Vector<T>& other)
-Assigns the contents of the other vector to this vector.
-
-Vector(Vector<T>&& other)
-Constructs a vector that is a move of the other vector.
-
-Vector& operator=(Vector<T>&& other)
-Assigns the contents of the other vector to this vector by move.
-
-T& at(const int index) const
-Returns a reference to the element at the specified index.
-
-T& operator[](const int index) const
-Returns a reference to the element at the specified index.
-
-void insert(const int index, const T& element)
-Inserts the specified element at the specified index.
 
 Contributing
 Contributions to this project are welcome. If you find a bug or want to suggest an improvement, please open an issue or submit a pull request.
