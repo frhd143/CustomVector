@@ -38,8 +38,9 @@ int main() {
 }
 ```
 
-Contributing
+## Contributing
 Contributions to this project are welcome. If you find a bug or want to suggest an improvement, please open an issue or submit a pull request.
 
-License
+
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
